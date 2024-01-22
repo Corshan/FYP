@@ -1,4 +1,3 @@
-
 <header>
   <mat-toolbar color="primary">
     <mat-toolbar-row>
@@ -9,33 +8,66 @@
     </mat-toolbar-row>
   </mat-toolbar>
 </header>
-  
-  <main>
-    <div>
-      <mat-card class="info">
-        <!-- <mat-card-title>Chaos Chefs</mat-card-title> -->
-        <mat-card-content>
+
+<main>
+  <div>
+    <mat-card class="info">
+      <mat-card-title class="title">Project Information</mat-card-title>
+      <mat-divider class="project-divider"></mat-divider>
+      <mat-card-content>
+        <div class="content-info">
           <img mat-card-image src="../assets/chaos-chef-logo.jpg" class="logo">
-        </mat-card-content>
-      </mat-card>
-      <mat-card>
-        <img width="288" height="400px">
-        <form action="file" method="get">
-          <button mat-flat-button color="primary"><mat-icon>cloud_download</mat-icon>Download Poster</button>
+          <div class="content-info-titles">
+            <mat-card-title>Comercial Title</mat-card-title>
+            <p>Chaos Chefs</p>
+            <mat-card-title>Acedemic Title</mat-card-title>
+            <p>TBD</p>
+          </div>
+        </div>
+        <mat-card-title>Project Abstract</mat-card-title>
+        <div class="abstract">
+          <p align="justify">
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum
+            sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies
+            nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel,
+            aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam
+            dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean
+            vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem
+            ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque
+            rutrum. Aenean imperdiet. Etiam ultricies
+          </p>
+        </div>
+      </mat-card-content>
+      <mat-card-actions>
+        <form action="{{gitHubLink}}" method="get" target="_blank">
+          <button mat-flat-button color="primary">Github Repo Link</button>
         </form>
-      </mat-card>
-    </div>
-    <div>
-      <mat-card>
-        <mat-card-content>
-          <iframe width="610" height="343"
-          src="https://www.youtube.com/embed/9zo-Qbt7ZFg">
-          </iframe> 
-        </mat-card-content>   
-      </mat-card>
-      <mat-card>
-        <img mat-card-image src="../assets/profile_pic.png" height="200px" width="200px">
-      </mat-card>
-    </div>
-  </main>
+        <form action="{{posterLink}}" method="get">
+          <button mat-flat-button color="primary">Poster Link</button>
+        </form>
+        <form action="{{buttonVideoLink}}" method="get" target="_blank">
+          <button mat-flat-button color="primary">Video Demo Link</button>
+        </form>
+      </mat-card-actions>
+    </mat-card>
+    <mat-card>
+      <mat-card-title class="title">Poster</mat-card-title>
+      <mat-divider class="project-divider"></mat-divider>
+      <img class="poster" width="288px" height="400px">
+    </mat-card>
+  </div>
+  <div>
+    <mat-card>
+      <mat-card-title class="title">Demo Video</mat-card-title>
+      <mat-divider class="project-divider"></mat-divider>
+      <mat-card-content>
+        <iframe width="610" height="343" [src]="urlSafe">
+        </iframe>
+      </mat-card-content>
+    </mat-card>
+    <mat-card>
+      <img mat-card-image src="../assets/profile_pic.png" height="200px" width="200px" class="profile-pic">
+    </mat-card>
+  </div>
+</main>
 <router-outlet />

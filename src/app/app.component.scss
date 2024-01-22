@@ -5,7 +5,11 @@ main > div{
     padding-top: 1.5rem;  
 }
 
-mat-card-title{
+main {
+    padding: 1rem;
+}
+
+.title{
     margin: 1rem 0 0 0;
     text-align: center;
 }
@@ -19,7 +23,7 @@ mat-card-title{
     width: 35rem;
 }
 
-img {
+.poster {
     margin: 1rem;
 }
 
@@ -39,7 +43,6 @@ iframe{
 
 button{
     margin: 0rem 1rem 1rem;
-    width: 18rem;
 }
 
 mat-toolbar-row > h1 {
@@ -58,4 +61,25 @@ mat-toolbar-row > h1 {
   form{
     display: flex;
     justify-content: center;
+  }
+
+  .content-info{
+    display: flex;
+    justify-content: start;
+  }
+
+  .content-info-titles{
+    margin-left: 1rem;
+  }
+
+  .project-divider{
+    margin-bottom: 1rem;
+  }
+
+  .profile-pic{
+    margin: 1rem;
+  }
+
+  .abstract{
+    margin-bottom: 2rem;
   }
