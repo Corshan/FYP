@@ -59,8 +59,7 @@ mat-toolbar-row > h1 {
   }
 
   form{
-    display: flex;
-    justify-content: center;
+   
   }
 
   .content-info{
@@ -82,4 +81,11 @@ mat-toolbar-row > h1 {
 
   .abstract{
     margin-bottom: 2rem;
+    margin-top: 1rem;
+  }
+
+  .about-me{
+    width: 20rem;
+    display: grid;
+    justify-content: center;
   }

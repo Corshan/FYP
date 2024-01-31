@@ -16,7 +16,7 @@
       <mat-divider class="project-divider"></mat-divider>
       <mat-card-content>
         <div class="content-info">
-          <img mat-card-image src="../assets/chaos-chef-logo.jpg" class="logo">
+          <img mat-card-image src="assets/chaos-chef-logo.jpg" class="logo">
           <div class="content-info-titles">
             <mat-card-title>Comercial Title</mat-card-title>
             <p>Chaos Chefs</p>
@@ -24,8 +24,8 @@
             <p>TBD</p>
           </div>
         </div>
-        <mat-card-title>Project Abstract</mat-card-title>
         <div class="abstract">
+          <mat-card-title>Project Abstract</mat-card-title>
           <p align="justify">
             Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum
             sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies
@@ -40,20 +40,20 @@
       </mat-card-content>
       <mat-card-actions>
         <form action="{{gitHubLink}}" method="get" target="_blank">
-          <button mat-flat-button color="primary">Github Repo Link</button>
+          <button mat-flat-button color="accent">Github Repo Link</button>
         </form>
         <form action="{{posterLink}}" method="get">
-          <button mat-flat-button color="primary">Poster Link</button>
+          <button mat-flat-button color="accent">Poster Link</button>
         </form>
         <form action="{{buttonVideoLink}}" method="get" target="_blank">
-          <button mat-flat-button color="primary">Video Demo Link</button>
+          <button mat-flat-button color="accent">Video Demo Link</button>
         </form>
       </mat-card-actions>
     </mat-card>
     <mat-card>
       <mat-card-title class="title">Poster</mat-card-title>
       <mat-divider class="project-divider"></mat-divider>
-      <img class="poster" width="288px" height="400px">
+      <img class="poster" width="370px" src="assets/chaos_chef_poster.png">
     </mat-card>
   </div>
   <div>
@@ -65,8 +65,8 @@
         </iframe>
       </mat-card-content>
     </mat-card>
-    <mat-card>
-      <img mat-card-image src="../assets/profile_pic.png" height="200px" width="200px" class="profile-pic">
+    <mat-card class="about-me">
+      <img mat-card-image src="assets/profile_pic.png" height="200px" width="200px" class="profile-pic">
     </mat-card>
   </div>
 </main>

@@ -28,7 +28,7 @@ export class AppComponent {
   demoVideoCode = '9zo-Qbt7ZFg';
   iframeVideoLink = `https://www.youtube.com/embed/${this.demoVideoCode}`
   buttonVideoLink = `https://www.youtube.com/watch/${this.demoVideoCode}`
-  posterLink = ''; 
+  posterLink = 'assets/chaos_chef_poster.png'; 
   urlSafe: SafeResourceUrl | undefined = undefined;
 
   constructor(public sanitizer: DomSanitizer) {}
