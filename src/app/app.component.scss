@@ -58,10 +58,6 @@ mat-toolbar-row > h1 {
     font-size: 15px;
   }
 
-  form{
-   
-  }
-
   .content-info{
     display: flex;
     justify-content: start;
@@ -77,6 +73,7 @@ mat-toolbar-row > h1 {
 
   .profile-pic{
     margin: 1rem;
+    border-radius: 1rem !important;
   }
 
   .abstract{
