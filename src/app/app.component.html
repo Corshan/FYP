@@ -18,26 +18,28 @@
         <div class="content-info">
           <img mat-card-image src="assets/chaos-chef-logo.jpg" class="logo">
           <div class="content-info-titles">
-            <mat-card-title>Commercial Title</mat-card-title>
-            <p>Chaos Chefs</p>
-            <mat-card-title>Academic Title</mat-card-title>
-            <p>TBD</p>
+            <div>
+              <mat-card-title>Commercial Title</mat-card-title>
+              <p>Chaos Chefs</p>
+            </div>
+            <div class="academic-title">
+              <mat-card-title>Academic Title</mat-card-title>
+                <!-- <mat-chip><div>Unity Based Multiplayer Video Game in Virtual Reality</div></mat-chip> -->
+                <p>Unity Based Multiplayer Video Game in Virtual Reality</p>
+            </div>
           </div>
         </div>
         <div class="abstract">
           <mat-card-title>Project Abstract</mat-card-title>
           <p align="justify">
-            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
-            Cum
-            sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis,
-            ultricies
-            nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel,
-            aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam
-            dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean
-            vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam
-            lorem
-            ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque
-            rutrum. Aenean imperdiet. Etiam ultricies
+            Chaos Chefs is a Virtual Reality (VR) cooking simulator game, the player takes on the role of a chef in a
+            fast pace kitchen. The game has a multiplayer feature where players can join each other and cook recipes
+            together. Each round of the game will last between 5 and 10 minutes, during which the players will have
+            multiple customers ordering burgers with different toppings. The players will need to grill the burger
+            patties, chop tomatoes, onions, pickles and then put all the ingredients together on a plate but customers
+            are inpatient and if the players takes too long to complete their order. The customer will get angry and
+            leave. When the players get the burgers out on time, with the correct toppings, the players will earn cash
+            to upgrade their kitchens.
           </p>
         </div>
       </mat-card-content>
@@ -56,7 +58,7 @@
     <mat-card>
       <mat-card-title class="title">Poster</mat-card-title>
       <mat-divider class="project-divider"></mat-divider>
-      <img class="poster" width="370px" src="assets/chaos_chef_poster.png">
+      <img class="poster" width="380px" src="assets/chaos_chef_poster.png">
     </mat-card>
   </div>
   <div>
@@ -64,8 +66,7 @@
       <mat-card-title class="title">Demo Video</mat-card-title>
       <mat-divider class="project-divider"></mat-divider>
       <mat-card-content>
-        <iframe width="610" height="343" [src]="urlSafe">
-        </iframe>
+        <iframe width="610" height="343" [src]="urlSafe"></iframe>
       </mat-card-content>
     </mat-card>
     <mat-card class="about-me">

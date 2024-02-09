@@ -61,10 +61,13 @@ mat-toolbar-row>h1 {
 .content-info {
   display: flex;
   justify-content: start;
+  // max-width: 5em;
 }
 
 .content-info-titles {
   margin-left: 1rem;
+  // width: 10em;
+  overflow-wrap: normal;
 }
 
 .project-divider {
@@ -88,13 +91,13 @@ mat-toolbar-row>h1 {
 }
 
 .about-me {
-  width: 20rem;
+  width: 20.5em;
   // display: grid;
   // justify-content: center;
 }
 
 .setu-logo {
-  margin-left: 1rem;
+  margin-left: 1.5em;
   border-radius: 1rem !important;
 }
 
@@ -106,4 +109,8 @@ mat-toolbar-row>h1 {
   display: flex;
   justify-items: stretch;
   margin-top: 1rem;
+}
+
+.academic-title{
+  margin-top: 1em;
 }

@@ -7,6 +7,7 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatDividerModule } from '@angular/material/divider';
 import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
+import { MatChipsModule } from '@angular/material/chips';
 
 @Component({
   selector: 'app-root',
@@ -18,7 +19,8 @@ import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
     MatButtonModule,
     MatIconModule,
     MatToolbarModule,
-    MatDividerModule
+    MatDividerModule,
+    MatChipsModule
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
@@ -28,10 +30,10 @@ export class AppComponent {
   demoVideoCode = '9zo-Qbt7ZFg';
   iframeVideoLink = `https://www.youtube.com/embed/${this.demoVideoCode}`
   buttonVideoLink = `https://www.youtube.com/watch/${this.demoVideoCode}`
-  posterLink = 'assets/chaos_chef_poster.png'; 
+  posterLink = 'assets/chaos_chef_poster.png';
   urlSafe: SafeResourceUrl | undefined = undefined;
 
-  constructor(public sanitizer: DomSanitizer) {}
+  constructor(public sanitizer: DomSanitizer) { }
 
 
   ngOnInit() {
