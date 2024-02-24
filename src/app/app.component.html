@@ -1,6 +1,6 @@
 <header>
   <mat-toolbar color="primary">
-    <mat-toolbar-row>
+    <mat-toolbar-row class="header">
       <h1>Corey Shanahan's Final Year Project 2023/24</h1>
     </mat-toolbar-row>
     <mat-toolbar-row color="warning" class="warning-msg">
@@ -17,6 +17,7 @@
       <mat-card-content>
         <div class="content-info">
           <img mat-card-image src="assets/chaos-chef-logo.jpg" class="logo">
+          
           <div class="content-info-titles">
             <div>
               <mat-card-title>Commercial Title</mat-card-title>
@@ -45,20 +46,21 @@
       </mat-card-content>
       <mat-card-actions>
         <form action="{{gitHubLink}}" method="get" target="_blank">
-          <button mat-flat-button color="accent">GitHub Repo Link</button>
+          <button mat-raised-button>GitHub Repo Link</button>
         </form>
         <form action="{{posterLink}}" method="get" target="_blank">
-          <button mat-flat-button color="accent">Poster Link</button>
+          <button mat-raised-button>Poster Link</button>
         </form>
         <form action="{{buttonVideoLink}}" method="get" target="_blank">
-          <button mat-flat-button color="accent">Video Demo Link</button>
+          <button mat-raised-button>Video Demo Link</button>
         </form>
       </mat-card-actions>
     </mat-card>
     <mat-card>
       <mat-card-title class="title">Poster</mat-card-title>
       <mat-divider class="project-divider"></mat-divider>
-      <img class="poster" width="380px" src="assets/chaos_chef_poster.png">
+      <img class="poster" width="380px" src="assets/poster.png">
+      <!-- <embed src="assets/poster.pdf" width="380px" /> -->
     </mat-card>
   </div>
   <div>

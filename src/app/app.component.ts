@@ -27,10 +27,10 @@ import { MatChipsModule } from '@angular/material/chips';
 })
 export class AppComponent {
   gitHubLink = 'https://github.com/Corshan/chaos-chef';
-  demoVideoCode = '9zo-Qbt7ZFg';
+  demoVideoCode = 'CMlpCp7U_aM';
   iframeVideoLink = `https://www.youtube.com/embed/${this.demoVideoCode}`
   buttonVideoLink = `https://www.youtube.com/watch/${this.demoVideoCode}`
-  posterLink = 'assets/chaos_chef_poster.png';
+  posterLink = 'assets/poster.pdf';
   urlSafe: SafeResourceUrl | undefined = undefined;
 
   constructor(public sanitizer: DomSanitizer) { }
