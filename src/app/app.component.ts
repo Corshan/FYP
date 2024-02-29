@@ -30,7 +30,7 @@ export class AppComponent {
   demoVideoCode = 'CMlpCp7U_aM';
   iframeVideoLink = `https://www.youtube.com/embed/${this.demoVideoCode}`
   buttonVideoLink = `https://www.youtube.com/watch/${this.demoVideoCode}`
-  posterLink = 'assets/poster.pdf';
+  posterLink = 'assets/FYP_poster_final_version.pdf';
   urlSafe: SafeResourceUrl | undefined = undefined;
 
   constructor(public sanitizer: DomSanitizer) { }
