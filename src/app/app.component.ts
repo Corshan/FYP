@@ -27,7 +27,7 @@ import { MatChipsModule } from '@angular/material/chips';
 })
 export class AppComponent {
   gitHubLink = 'https://github.com/Corshan/chaos-chef';
-  demoVideoCode = 'hnpIn345ly0';
+  demoVideoCode = 'jZs_wKkvGM8';
   iframeVideoLink = `https://www.youtube.com/embed/${this.demoVideoCode}`
   buttonVideoLink = `https://www.youtube.com/watch/${this.demoVideoCode}`
   posterLink = 'assets/FYP_poster_final_version.pdf';
