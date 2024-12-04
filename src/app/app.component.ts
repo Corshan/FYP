@@ -11,19 +11,8 @@ import { MatChipsModule } from '@angular/material/chips';
 
 @Component({
   selector: 'app-root',
-  standalone: true,
-  imports: [
-    RouterOutlet,
-    MatGridListModule,
-    MatCardModule,
-    MatButtonModule,
-    MatIconModule,
-    MatToolbarModule,
-    MatDividerModule,
-    MatChipsModule
-  ],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.scss'
+  styleUrl: './app.component.css'
 })
 export class AppComponent {
   gitHubLink = 'https://github.com/Corshan/chaos-chef';
